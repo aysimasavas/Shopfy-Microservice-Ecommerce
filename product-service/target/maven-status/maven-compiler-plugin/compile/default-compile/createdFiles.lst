@@ -1,0 +1,10 @@
+com\aysimasavas\productservice\dto\ProductRequest.class
+com\aysimasavas\productservice\dto\ProductResponse.class
+com\aysimasavas\productservice\model\Product$ProductBuilder.class
+com\aysimasavas\productservice\service\ProductService.class
+com\aysimasavas\productservice\dto\ProductResponse$ProductResponseBuilder.class
+com\aysimasavas\productservice\controller\ProductController.class
+com\aysimasavas\productservice\ProductServiceApplication.class
+com\aysimasavas\productservice\dto\ProductRequest$ProductRequestBuilder.class
+com\aysimasavas\productservice\repository\ProductRepository.class
+com\aysimasavas\productservice\model\Product.class

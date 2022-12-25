@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.aysimasavas.productservice.ProductServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.325 s <<< FAILURE! - in com.aysimasavas.productservice.ProductServiceApplicationTests
+com.aysimasavas.productservice.ProductServiceApplicationTests  Time elapsed: 1.322 s  <<< ERROR!
+java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+
