@@ -21,7 +21,7 @@ import java.util.UUID;
 public class OrderService {
 
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
     public void pleceOrder(OrderRequest orderRequest){
 
         Order order = new Order();
@@ -37,8 +37,8 @@ public class OrderService {
             .toList();
 
         //inventory service çağrılır,eğer ürün varsa sipariş verilir
-        InventoryResponse[] inventoryResponses= webClient.get()
-            .uri("http://localhost:8083/api/inventory",uriBuilder -> uriBuilder
+        InventoryResponse[] inventoryResponses= webClientBuilder.build().get()
+            .uri("http://inventory-service/api/inventory",uriBuilder -> uriBuilder
                 .queryParam("skuCode",skuCodes).build())
                 .retrieve()
                     .bodyToMono(InventoryResponse[].class)
