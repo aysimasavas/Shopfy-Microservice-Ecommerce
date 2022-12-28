@@ -43,4 +43,10 @@ public class ProductService {
             .categoryId(product.getCategoryId())
             .build();
     }
+
+    public List<ProductResponse> getProductsByCategory(String categoryId){
+        List<Product> products=productRepository.findByCategoryId(categoryId);
+        return products.stream().map(this:: mapToProductResponse).toList();
+
+    }
 }

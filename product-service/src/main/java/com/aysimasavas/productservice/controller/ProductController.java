@@ -40,4 +40,10 @@ public class ProductController {
     public List<ProductResponse> getAllProducts(){
       return productService.getAllProducts();
     }
+
+    @GetMapping("/products/{categoryId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<ProductResponse> getProductsByCategoryId(@PathVariable("categoryId") String categoryId){
+        return productService.getProductsByCategory(categoryId);
+    }
 }
