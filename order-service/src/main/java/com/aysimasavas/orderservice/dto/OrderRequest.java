@@ -11,6 +11,5 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 public class OrderRequest {
-
     private List<OrderLineItemsDto> orderLineItemsDtoList;
 }
