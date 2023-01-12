@@ -22,7 +22,7 @@ public class InventoryService {
 
     @Transactional(readOnly = true)
     public List<InventoryResponse> isInStock(List<String> skuCode) {
-        log.info("Checking Inventory");
+        log.info("Stok kontrolü");
         return inventoryRepository.findBySkuCodeIn(skuCode).stream()
             .map(inventory ->
                 InventoryResponse.builder()
